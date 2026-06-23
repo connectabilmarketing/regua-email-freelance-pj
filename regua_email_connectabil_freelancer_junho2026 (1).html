@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Régua de E-mails — Connectabil · Lançamento Freelancers Contábeis · Junho 2026</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f4f0; color: #1a1a1a; padding: 2rem 1rem; }
+.container { max-width: 800px; margin: 0 auto; }
+h1 { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
+.subtitle { font-size: 13px; color: #666; margin-bottom: 1.5rem; }
+.tabs { display: flex; gap: 8px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.tab { padding: 8px 16px; border-radius: 8px; border: 1px solid #ddd; font-size: 13px; background: #fff; color: #555; }
+.tab.active { background: #3C3489; color: #fff; border-color: #3C3489; font-weight: 500; }
+.base-desc { font-size: 13px; color: #555; margin-bottom: 1.5rem; padding: 10px 14px; border-left: 3px solid #7F77DD; background: #f0eefc; border-radius: 0 8px 8px 0; }
+.week-label { font-size: 11px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.07em; margin: 20px 0 8px; }
+.email-card { background: #fff; border: 1px solid #e5e5e5; border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+.email-header { display: flex; align-items: center; gap: 10px; padding: 14px 16px; cursor: pointer; flex-wrap: wrap; }
+.email-header:hover { background: #fafafa; }
+.date-badge { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: #EEEDFE; color: #3C3489; white-space: nowrap; }
+.new-badge { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: #DCFCE7; color: #166534; white-space: nowrap; }
+.email-subject { font-size: 14px; font-weight: 500; flex: 1; min-width: 160px; }
+.chevron { margin-left: auto; color: #999; font-size: 16px; }
+.email-body { padding: 0 16px 16px; display: none; border-top: 1px solid #f0f0f0; }
+.email-body.open { display: block; }
+.body-label { font-size: 11px; color: #aaa; text-transform: uppercase; letter-spacing: 0.05em; margin: 12px 0 8px; }
+.body-text { font-size: 14px; color: #222; line-height: 1.85; white-space: pre-wrap; background: #fafafa; padding: 16px; border-radius: 8px; border: 1px solid #eee; }
+.copy-btn { margin-top: 10px; font-size: 12px; padding: 6px 14px; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: pointer; color: #444; }
+.copy-btn:hover { background: #f0eefc; color: #3C3489; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Régua de E-mails — Connectabil</h1>
+  <p class="subtitle">23 a 30 de junho de 2026 · Dias úteis · Lançamento: Freelancers Contábeis · Voz da CEO Vitória</p>
+  <div class="tabs">
+    <button class="tab active">Lançamento — Freelancers Contábeis</button>
+  </div>
+
+  <div class="base-desc">Lançamento de uma nova opção de contratação: profissionais contábeis freelancers, para demandas temporárias e pontuais. Complementa — não substitui — o recrutamento para vaga. Posicionamento central: "vaga é pra quem vem pra ficar; freelancer é pra quem vem pra resolver". Objetivo: apresentar o produto como uma porta a mais e converter interessados para uma primeira conversa.</div>
+
+  <div class="week-label">Semana 1 — 23 a 26 de junho</div>
+
+  <div class="email-card">
+    <div class="email-header" onclick="toggle(this)">
+      <span class="date-badge">23/06 (Ter)</span>
+      <span class="new-badge">Lançamento</span>
+      <span class="email-subject">Connectabil lança a contratação de freelancers contábeis</span>
+      <span class="chevron">&#8964;</span>
+    </div>
+    <div class="email-body">
+      <p class="body-label">Conteúdo completo</p>
+      <p class="body-text">Assunto: Connectabil lança a contratação de freelancers contábeis
+
+Oi, [Nome]!
+
+Tenho uma novidade pra te contar, e ela amplia o que a gente já faz por você.
+
+Você conhece a Connectabil por conectar empresas do mercado contábil aos profissionais certos pra preencher uma vaga. Isso continua, e segue sendo o coração do que fazemos.
+
+A novidade é que agora a gente também conecta você a profissionais contábeis freelancers.
+
+Porque nem toda necessidade é uma vaga. Às vezes o que você precisa é de reforço pra uma demanda específica, com hora pra começar e hora pra terminar.
+
+Vaga é pra quem vem pra ficar. Freelancer é pra quem vem pra resolver. E agora você tem os dois caminhos no mesmo lugar.
+
+Nos próximos dias vou te mostrar quando cada um faz sentido e como a gente garante a qualidade de quem chega até você.
+
+Isso é só o começo.
+
+Vitória
+CEO, Connectabil</p>
+      <button class="copy-btn" onclick="copiar(this)">Copiar e-mail</button>
+    </div>
+  </div>
+
+  <div class="email-card">
+    <div class="email-header" onclick="toggle(this)">
+      <span class="date-badge">24/06 (Qua)</span>
+      <span class="email-subject">Vaga ou freelancer: quando cada modelo faz sentido</span>
+      <span class="chevron">&#8964;</span>
+    </div>
+    <div class="email-body">
+      <p class="body-label">Conteúdo completo</p>
+      <p class="body-text">Assunto: Vaga ou freelancer: quando cada modelo faz sentido
+
+Oi, [Nome]!
+
+Ontem te apresentei o freelancer contábil da Connectabil. Hoje quero explicar quando ele entra, sem nenhuma confusão com o que você já conhece da gente.
+
+Quando você tem uma função permanente pra ocupar, alguém que vai crescer junto com o time e ficar, o caminho continua sendo abrir uma vaga e contratar com todo o processo que você já confia na Connectabil. Nada disso muda.
+
+O freelancer é pra um outro momento: aquele em que a necessidade tem prazo. Um projeto, uma implantação, um período de pico. Você precisa de mão qualificada, mas só por um tempo.
+
+Antes, esse caso ficava sem uma boa resposta. Agora tem.
+
+São duas portas diferentes pra duas necessidades diferentes. E as duas levam ao mesmo lugar: o profissional certo, rápido e com a mesma validação técnica da Connectabil. Antes de chegar até você, cada freelancer passa por teste técnico e pela nossa IA, a GlórIA. Sexta eu te explico isso em detalhe.
+
+Amanhã te conto o cenário em que isso muda o jogo de verdade.
+
+Vitória
+CEO, Connectabil</p>
+      <button class="copy-btn" onclick="copiar(this)">Copiar e-mail</button>
+    </div>
+  </div>
+
+  <div class="email-card">
+    <div class="email-header" onclick="toggle(this)">
+      <span class="date-badge">25/06 (Qui)</span>
+      <span class="email-subject">O reforço certo para os picos de demanda contábil</span>
+      <span class="chevron">&#8964;</span>
+    </div>
+    <div class="email-body">
+      <p class="body-label">Conteúdo completo</p>
+      <p class="body-text">Assunto: O reforço certo para os picos de demanda contábil
+
+Oi, [Nome]!
+
+Pensa naquele período do mês ou do ano em que a demanda contábil aperta.
+
+O fechamento que acumula. A obrigação que apareceu com prazo curto. O cliente novo que entrou e dobrou o volume de um dia pro outro.
+
+Esses momentos têm uma coisa em comum: eles passam. A pressão é real, mas é temporária.
+
+É exatamente pra isso que o freelancer da Connectabil existe. Você traz o reforço qualificado pelo tempo que a demanda durar, e quando ela passa, você não fica carregando um custo que não precisa mais.
+
+Não é sobre mexer no seu time. É sobre dar fôlego pra ele nas horas certas.
+
+E rápido. A Connectabil já é referência em velocidade de match, então o reforço chega em dias, não em semanas, justo quando o prazo é o que mais aperta.
+
+Se isso soa familiar, me responde aqui. Posso te mostrar como funciona na prática.
+
+Vitória
+CEO, Connectabil</p>
+      <button class="copy-btn" onclick="copiar(this)">Copiar e-mail</button>
+    </div>
+  </div>
+
+  <div class="email-card">
+    <div class="email-header" onclick="toggle(this)">
+      <span class="date-badge">26/06 (Sex)</span>
+      <span class="email-subject">Como validamos cada freelancer antes de chegar até você</span>
+      <span class="chevron">&#8964;</span>
+    </div>
+    <div class="email-body">
+      <p class="body-label">Conteúdo completo</p>
+      <p class="body-text">Assunto: Como validamos cada freelancer antes de chegar até você
+
+Oi, [Nome]!
+
+Tem uma pergunta justa sobre contratar freelancer: como confiar em alguém que vai mexer nos seus números sem você conhecer a pessoa?
+
+A resposta é o que sempre diferenciou a Connectabil: a gente não entrega nome de uma lista. A gente entrega profissional validado.
+
+Mesmo no freelancer, antes de chegar até você, a pessoa passa por teste técnico da área dela e pela GlórIA, nossa IA treinada com mais de 60 mil horas de experiência em entrevistas contábeis. Ela simula a conversa pelo WhatsApp, mapeia comportamento e gera um relatório completo.
+
+Ou seja: a mesma régua de qualidade que você já confia numa contratação permanente, agora também numa demanda pontual.
+
+Prazo curto não é desculpa pra baixar o padrão. Muito pelo contrário.
+
+Quer ser dos primeiros a testar? Me responde aqui.
+
+Vitória
+CEO, Connectabil</p>
+      <button class="copy-btn" onclick="copiar(this)">Copiar e-mail</button>
+    </div>
+  </div>
+
+  <div class="week-label">Semana 2 — 29 e 30 de junho</div>
+
+  <div class="email-card">
+    <div class="email-header" onclick="toggle(this)">
+      <span class="date-badge">29/06 (Seg)</span>
+      <span class="email-subject">3 situações em que o freelancer é a peça que faltava</span>
+      <span class="chevron">&#8964;</span>
+    </div>
+    <div class="email-body">
+      <p class="body-label">Conteúdo completo</p>
+      <p class="body-text">Assunto: 3 situações em que o freelancer é a peça que faltava
+
+Oi, [Nome]!
+
+Deixa eu te mostrar onde o freelancer contábil encaixa melhor, com exemplos reais.
+
+O escritório com o fechamento acumulando: declarações de IR atrasadas, obrigações acessórias (SPED, ECD, EFD) na fila e o BPO financeiro que não fecha no prazo. Reforço por algumas semanas resolve.
+
+A empresa que pegou um cliente grande e precisa de mão extra qualificada pra conciliações, apurações e rotina fiscal só durante a implantação.
+
+O gestor que quer modernizar a operação, automatizar processos ou implantar ferramentas de IA na rotina contábil, e precisa de um especialista dedicado só a esse projeto, com começo, meio e fim.
+
+Repara que em nenhum desses casos o problema é o time atual. O time está certo. O que faltava era uma forma de dar conta dos extras sem distorcer a estrutura.
+
+É isso que o freelancer resolve: a necessidade temporária, com uma solução do tamanho dela.
+
+Se algum desses cenários é o seu, me responde contando qual. Eu te mostro como funciona.
+
+Vitória
+CEO, Connectabil</p>
+      <button class="copy-btn" onclick="copiar(this)">Copiar e-mail</button>
+    </div>
+  </div>
+
+  <div class="email-card">
+    <div class="email-header" onclick="toggle(this)">
+      <span class="date-badge">30/06 (Ter)</span>
+      <span class="email-subject">Acesso prioritário ao lançamento do freelancer Connectabil</span>
+      <span class="chevron">&#8964;</span>
+    </div>
+    <div class="email-body">
+      <p class="body-label">Conteúdo completo</p>
+      <p class="body-text">Assunto: Acesso prioritário ao lançamento do freelancer Connectabil
+
+Oi, [Nome]!
+
+Junho fecha hoje, e com ele a primeira semana desse lançamento.
+
+Durante a semana eu te mostrei o que é o freelancer contábil da Connectabil: uma opção a mais, pra quando a necessidade é temporária. Validado por teste técnico e pela GlórIA, e rápido, porque demanda urgente não pode esperar semanas.
+
+Agora vem o motivo desse e-mail: estou abrindo o acesso para um primeiro grupo de empresas neste lançamento. Quem entrar agora tem prioridade no match e acompanhamento próximo do meu time na primeira contratação, pra garantir que a experiência seja impecável desde o começo.
+
+Não precisa ter uma demanda fechada hoje. Se você quer ser um dos primeiros a ter esse recurso à mão pro próximo pico, é só me responder este e-mail com um "quero entrar", que eu te explico como funciona o acesso.
+
+Aqui a gente acredita que o SIM muda tudo. O seu pode abrir uma porta nova.
+
+Com carinho,
+Vitória
+CEO, Connectabil</p>
+      <button class="copy-btn" onclick="copiar(this)">Copiar e-mail</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function toggle(header) {
+  var body = header.nextElementSibling;
+  var chevron = header.querySelector('.chevron');
+  if (body.classList.contains('open')) {
+    body.classList.remove('open');
+    chevron.style.transform = '';
+  } else {
+    body.classList.add('open');
+    chevron.style.transform = 'rotate(180deg)';
+  }
+}
+
+function copiar(btn) {
+  var text = btn.previousElementSibling.textContent;
+  navigator.clipboard.writeText(text).then(function() {
+    btn.textContent = 'Copiado!';
+    setTimeout(function() { btn.textContent = 'Copiar e-mail'; }, 2000);
+  });
+}
+</script>
+</body>
+</html>
