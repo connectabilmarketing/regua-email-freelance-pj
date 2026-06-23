@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Régua de E-mails — Connectabil · Base PJ / Freelance · Junho 2026</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f4f0; color: #1a1a1a; padding: 2rem 1rem; }
+.container { max-width: 800px; margin: 0 auto; }
+h1 { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
+.subtitle { font-size: 13px; color: #666; margin-bottom: 1.5rem; }
+.tabs { display: flex; gap: 8px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.tab { padding: 8px 16px; border-radius: 8px; border: 1px solid #ddd; font-size: 13px; background: #fff; color: #555; }
+.tab.active { background: #3C3489; color: #fff; border-color: #3C3489; font-weight: 500; }
+.base-desc { font-size: 13px; color: #555; margin-bottom: 1.5rem; padding: 10px 14px; border-left: 3px solid #7F77DD; background: #f0eefc; border-radius: 0 8px 8px 0; }
+.week-label { font-size: 11px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.07em; margin: 20px 0 8px; }
+.email-card { background: #fff; border: 1px solid #e5e5e5; border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+.email-header { display: flex; align-items: center; gap: 10px; padding: 14px 16px; cursor: pointer; flex-wrap: wrap; }
+.email-header:hover { background: #fafafa; }
+.date-badge { font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 6px; background: #EEEDFE; color: #3C3489; white-space: nowrap; }
+.email-subject { font-size: 14px; font-weight: 500; flex: 1; min-width: 160px; }
+.chevron { margin-left: auto; color: #999; font-size: 16px; }
+.email-body { padding: 0 16px 16px; display: none; border-top: 1px solid #f0f0f0; }
+.email-body.open { display: block; }
+.body-label { font-size: 11px; color: #aaa; text-transform: uppercase; letter-spacing: 0.05em; margin: 12px 0 8px; }
+.body-text { font-size: 14px; color: #222; line-height: 1.85; white-space: pre-wrap; background: #fafafa; padding: 16px; border-radius: 8px; border: 1px solid #eee; }
+.copy-btn { margin-top: 10px; font-size: 12px; padding: 6px 14px; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: pointer; color: #444; }
+.copy-btn:hover { background: #f0eefc; color: #3C3489; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Régua de E-mails — Connectabil</h1>
+  <p class="subtitle">23 a 30 de junho de 2026 · Dias úteis · Base Contratação PJ / Freelance · Voz da CEO Vitória</p>
+  <div class="tabs">
+    <button class="tab active">Base Contratação PJ / Freelance</button>
+  </div>
+
+  <div class="base-desc">Empresas e escritórios contábeis que contratam — ou têm interesse em contratar — profissionais no modelo PJ ou freelance, por projeto ou demanda sazonal. Tom direto, focado em flexibilidade e agilidade. Objetivo: mostrar como a Connectabil entrega profissionais validados sob demanda e converter para o Banco de Talentos ou Assessoria.</div>
+
+  <div class="week-label">Semana 1 — 23 a 26 de junho</div>
+
+  <div class="email-card">
+    <div class="email-header" onclick="toggle(this)">
+      <span class="date-badge">23/06 (Ter)</span>
+      <span class="email-subject">precisa de gente boa agora, mas não pra sempre?</span>
+      <span class="chevron">&#8964;</span>
+    </div>
+    <div class="email-body">
+      <p class="body-label">Conteúdo completo</p>
+      <p class="body-text">Assunto: precisa de gente boa agora, mas não pra sempre?
+
+Oi, [Nome]!
+
+Tem um momento que todo escritório e toda empresa contábil conhece bem: a demanda explode, o prazo aperta e, de repente, você precisa de mais gente. Fechamento, obrigações acessórias, um cliente novo que entrou de uma vez.
+
+Contratar CLT pra isso nem sempre faz sentido. O custo fixo fica, mesmo depois que o pico passa.
+
+É exatamente aí que a contratação PJ ou freelance resolve: você traz o profissional certo pelo tempo que precisar, sem carregar um custo fixo o ano inteiro.
+
+O problema costuma ser outro: achar gente boa, rápido e já validada.
+
+É isso que a Connectabil faz. A gente conecta você a uma base de mais de 280 mil profissionais do mercado contábil e financeiro, todos com perfil técnico mapeado.
+
+Nos próximos dias vou te mostrar como isso funciona na prática.
+
+Se já quiser adiantar, me responde aqui contando que tipo de profissional você costuma precisar.
+
+Vitória
+CEO, Connectabil
+
+P.S: Me segue no Instagram: @vitoriadosim. Posto bastante sobre mercado contábil e os bastidores da Connectabil.</p>
+      <button class="copy-btn" onclick="copiar(this)">Copiar e-mail</button>
+    </div>
+  </div>
+
+  <div class="email-card">
+    <div class="email-header" onclick="toggle(this)">
+      <span class="date-badge">24/06 (Qua)</span>
+      <span class="email-subject">como contratar sob demanda sem cruzar os dedos</span>
+      <span class="chevron">&#8964;</span>
+    </div>
+    <div class="email-body">
+      <p class="body-label">Conteúdo completo</p>
+      <p class="body-text">Assunto: como contratar sob demanda sem cruzar os dedos
+
+Oi, [Nome]!
+
+Ontem falei sobre contratar PJ ou freelance pra dar conta dos picos de demanda. Hoje quero te mostrar como a Connectabil torna isso simples.
+
+Funciona assim: você nos diz o perfil que precisa. A gente busca dentro da nossa base de mais de 280 mil profissionais contábeis. E, antes de qualquer pessoa chegar até você, ela passa pela GlórIA, nossa IA treinada com mais de 60 mil horas de experiência em entrevistas contábeis.
+
+A GlórIA simula a entrevista pelo WhatsApp, mapeia comportamentos e entrega um relatório completo.
+
+Na prática, isso significa que você fala só com quem já foi validado. E fecha em até 10 dias.
+
+Sem currículo no escuro. Sem cruzar os dedos torcendo pra dar certo.
+
+Quer ver como ficaria isso pra um perfil que você precisa? Me responde aqui que eu te mostro.
+
+Vitória
+CEO, Connectabil</p>
+      <button class="copy-btn" onclick="copiar(this)">Copiar e-mail</button>
+    </div>
+  </div>
+
+  <div class="email-card">
+    <div class="email-header" onclick="toggle(this)">
+      <span class="date-badge">25/06 (Qui)</span>
+      <span class="email-subject">contrato pontual não é desculpa pra contratar errado</span>
+      <span class="chevron">&#8964;</span>
+    </div>
+    <div class="email-body">
+      <p class="body-label">Conteúdo completo</p>
+      <p class="body-text">Assunto: contrato pontual não é desculpa pra contratar errado
+
+Oi, [Nome]!
+
+Existe uma armadilha comum na contratação PJ ou freelance: como é "só por um período", a gente acaba relaxando na triagem.
+
+Mas pensa bem. Um profissional contábil, mesmo que entre por projeto, vai mexer no que sua empresa tem de mais sensível: os números, os prazos, as obrigações.
+
+Se ele não entrega no nível esperado, o problema que era pra ser rápido vira atraso, retrabalho e dor de cabeça, justo no pior momento.
+
+A diferença está na validação.
+
+Na Connectabil, todo profissional passa por teste técnico da área dele e pela GlórIA antes de chegar até você. Você não recebe currículo: recebe gente com perfil técnico comprovado e comportamento avaliado.
+
+Curto prazo também merece a pessoa certa. Principalmente o curto prazo.
+
+Vitória
+CEO, Connectabil
+
+P.S: Nos acompanha nas redes: @connectabil no Instagram e LinkedIn.</p>
+      <button class="copy-btn" onclick="copiar(this)">Copiar e-mail</button>
+    </div>
+  </div>
+
+  <div class="email-card">
+    <div class="email-header" onclick="toggle(this)">
+      <span class="date-badge">26/06 (Sex)</span>
+      <span class="email-subject">a conta que ninguém faz antes de contratar errado</span>
+      <span class="chevron">&#8964;</span>
+    </div>
+    <div class="email-body">
+      <p class="body-label">Conteúdo completo</p>
+      <p class="body-text">Assunto: a conta que ninguém faz antes de contratar errado
+
+Oi, [Nome]!
+
+Uma contratação errada custa, em média, de 1,5 a 3 vezes o salário do profissional.
+
+Treinamento, retrabalho, prazo perdido, impacto na equipe. E recomeçar do zero.
+
+No modelo PJ ou freelance, a dor tem outro formato, mas continua doendo: você traz alguém pra resolver um pico, a entrega não vem como esperado, e o tempo que você não tinha some de vez.
+
+O que muda esse jogo é a triagem antes do contrato.
+
+Na Connectabil, antes de chegar até você, o profissional passa por teste técnico da sua área e pela GlórIA, que simula a entrevista e mapeia o comportamento.
+
+Você recebe gente pronta pra entregar, no tempo que precisa, sem carregar custo fixo depois que a demanda passa.
+
+Match certeiro em até 10 dias. Banco de Talentos a partir de R$618 por mês.
+
+Quer ver funcionando? Me responde aqui que eu te mostro.
+
+Vitória
+CEO, Connectabil</p>
+      <button class="copy-btn" onclick="copiar(this)">Copiar e-mail</button>
+    </div>
+  </div>
+
+  <div class="week-label">Semana 2 — 29 e 30 de junho</div>
+
+  <div class="email-card">
+    <div class="email-header" onclick="toggle(this)">
+      <span class="date-badge">29/06 (Seg)</span>
+      <span class="email-subject">600 empresas já contratam assim. faz sentido pra você?</span>
+      <span class="chevron">&#8964;</span>
+    </div>
+    <div class="email-body">
+      <p class="body-label">Conteúdo completo</p>
+      <p class="body-text">Assunto: 600 empresas já contratam assim. faz sentido pra você?
+
+Oi, [Nome]!
+
+Essa semana te falei sobre flexibilidade, sobre a GlórIA e sobre o custo de contratar errado.
+
+Hoje quero te mostrar o tamanho disso.
+
+A Connectabil já ajudou mais de 600 empresas e colocou mais de 5 mil profissionais nos lugares certos. Todo mês são mais de 50 mil novas conexões entre profissionais e empresas do mercado contábil.
+
+Boa parte dessas contratações é exatamente o que a gente vem conversando: PJ, freelance, projeto, demanda sazonal.
+
+Porque nem toda necessidade precisa virar um vínculo fixo. Às vezes você só precisa da pessoa certa, no momento certo, sem complicação.
+
+Se isso faz sentido pra sua realidade, o próximo passo é simples: me responde com o perfil que você costuma precisar e eu te mostro como acessar a base.
+
+Vitória
+CEO, Connectabil</p>
+      <button class="copy-btn" onclick="copiar(this)">Copiar e-mail</button>
+    </div>
+  </div>
+
+  <div class="email-card">
+    <div class="email-header" onclick="toggle(this)">
+      <span class="date-badge">30/06 (Ter)</span>
+      <span class="email-subject">último dia de junho. seu próximo SIM começa aqui</span>
+      <span class="chevron">&#8964;</span>
+    </div>
+    <div class="email-body">
+      <p class="body-label">Conteúdo completo</p>
+      <p class="body-text">Assunto: último dia de junho. seu próximo SIM começa aqui
+
+Oi, [Nome]!
+
+Hoje fecha junho.
+
+Durante esses dias eu te mostrei um jeito diferente de contratar no mercado contábil: sob demanda, com profissionais validados, sem o peso de um custo fixo que nem sempre cabe.
+
+Se em algum momento você pensou "isso resolveria meu próximo pico", esse é o convite pra dar o passo.
+
+O Banco de Talentos começa em R$618 por mês e te dá acesso à base, aos testes técnicos e ao processo mais especializado do mercado contábil. A Assessoria está disponível pra quem quer acompanhamento mais próximo em cada contratação.
+
+Aqui na Connectabil a gente acredita numa coisa simples: o SIM muda tudo.
+
+O seu pode ser o próximo. É só me responder.
+
+Com carinho,
+Vitória
+CEO, Connectabil
+
+P.S: Me segue: @vitoriadosim e @connectabil.</p>
+      <button class="copy-btn" onclick="copiar(this)">Copiar e-mail</button>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function toggle(header) {
+  var body = header.nextElementSibling;
+  var chevron = header.querySelector('.chevron');
+  if (body.classList.contains('open')) {
+    body.classList.remove('open');
+    chevron.style.transform = '';
+  } else {
+    body.classList.add('open');
+    chevron.style.transform = 'rotate(180deg)';
+  }
+}
+
+function copiar(btn) {
+  var text = btn.previousElementSibling.textContent;
+  navigator.clipboard.writeText(text).then(function() {
+    btn.textContent = 'Copiado!';
+    setTimeout(function() { btn.textContent = 'Copiar e-mail'; }, 2000);
+  });
+}
+</script>
+</body>
+</html>
